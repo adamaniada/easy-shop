@@ -6,7 +6,7 @@ php artisan make:seeder AdsTableSeeder
 
 php artisan db:wipe && php artisan migrate && php artisan db:seed && cls && php artisan serve
 
-git add . && git commit -m "commit 7" && git branch -M main && git push -u origin main
+git add . && git commit -m "commit 9" && git branch -M main && git push -u origin main
 
 
 # API ENDPOINT

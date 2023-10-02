@@ -31,7 +31,7 @@
         },
         {
           "src": "/api/(.*)",
-          "dest": "/functions/api/index.php"
+          "dest": "/api/index.php"
         }
     ],
     "env": {
