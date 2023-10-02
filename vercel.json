@@ -33,7 +33,7 @@
     "env": {
         "APP_NAME": "Easy Shop",
         "APP_ENV": "production",
-        "APP_KEY": "base64:hqG2t19SIogeeng1iD7g9nrGuMIH2faBVzwTHNMd2lY=",
+        "APP_KEY": "base64:2LQbvxOjWT6vNwEJ9Kwni1J5MPflJGl59rmDXTuNPHE=",
         "APP_DEBUG": "true",
         "APP_URL": "https://easy-shop.vercel.app",
 
