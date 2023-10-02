@@ -45,9 +45,5 @@
       "JWT_SECRET": "edvTwb9lfTer7JprOpiQhGGkP6mBB3EZ2mFA7dOtWt9WtEpoIhHa6396aqAzNrZO",
       "JWT_TTL": "129600",
       "JWT_REFRESH_TTL": "20160"
-    },
-    "ignoreFiles": [
-      ".env",
-      ".gitignore"
-    ]
+    }
   }
