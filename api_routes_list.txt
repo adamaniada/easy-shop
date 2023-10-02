@@ -1,0 +1,20 @@
+
+  POST            api/auth/login ............................................... auth.login › Api\AuthController@login
+  GET|HEAD        api/auth/logout ............................................ auth.logout › Api\AuthController@logout
+  GET|HEAD        api/auth/me ........................................................ auth.me › Api\AuthController@me
+  POST            api/auth/refresh ......................................... auth.refresh › Api\AuthController@refresh
+  POST            api/auth/register ...................................... auth.register › Api\AuthController@register
+  PUT             api/auth/user/update-password .... auth.users.updatePassword › Api\v1\UsersController@updatePassword
+  PUT             api/auth/user/update-profile ....... auth.users.updateProfile › Api\v1\UsersController@updateProfile
+  PUT             api/auth/user/{id}/active-account .. auth.users.activeAccount › Api\v1\UsersController@activeAccount
+  PUT             api/auth/user/{id}/delete-account .. auth.users.deleteAccount › Api\v1\UsersController@deleteAccount
+  PUT             api/auth/user/{id}/disable-account auth.users.disableAccount › Api\v1\UsersController@disableAccount
+  POST            api/auth/verify ............................................ auth.verify › Api\AuthController@verify
+  GET|HEAD        api/v1/products ................................... products.index › Api\v1\ProductsController@index
+  POST            api/v1/products ................................... products.store › Api\v1\ProductsController@store
+  GET|HEAD        api/v1/products/{product} ........................... products.show › Api\v1\ProductsController@show
+  PUT|PATCH       api/v1/products/{product} ....................... products.update › Api\v1\ProductsController@update
+  DELETE          api/v1/products/{product} ..................... products.destroy › Api\v1\ProductsController@destroy
+
+                                                                                                   Showing [16] routes
+

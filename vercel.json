@@ -1,0 +1,67 @@
+{
+    "public": false,
+    "outputDirectory": "public",
+    "framework": "vite",
+    "regions": [
+        "hnd1"
+    ],
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        {
+            "src": "/(css|js|brand|ad-images|default||videos)/(.*)",
+            "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/build/assets/(.*)",
+            "dest": "/public/build/assets/$1"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/robots.txt",
+            "dest": "/public/robots.txt"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_NAME": "Easy Shop",
+        "APP_ENV": "production",
+        "APP_KEY": "base64:hqG2t19SIogeeng1iD7g9nrGuMIH2faBVzwTHNMd2lY=",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://easy-shop.vercel.app",
+
+        "DB_CONNECTION": "sqlite",
+
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "VIEW_COMPILED_PATH": "/tmp/views",
+        "SSR_TEMP_PATH": "/tmp/ssr",
+        "NODE_PATH": "node",
+
+        "MAIL_MAILER": "smtp",
+        "MAIL_HOST": "mailpit",
+        "MAIL_PORT": "1025",
+        "MAIL_USERNAME": "null",
+        "MAIL_PASSWORD": "null",
+        "MAIL_ENCRYPTION": "null",
+        "MAIL_FROM_ADDRESS": "hello@example.com",
+        "MAIL_FROM_NAME": "${APP_NAME}",
+
+        "JWT_SECRET": "edvTwb9lfTer7JprOpiQhGGkP6mBB3EZ2mFA7dOtWt9WtEpoIhHa6396aqAzNrZO",
+        "JWT_TTL": "129600",
+        "JWT_REFRESH_TTL": "20160"
+    }
+}
