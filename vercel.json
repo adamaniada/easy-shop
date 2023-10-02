@@ -1,16 +1,38 @@
 {
+    "public": false,
+    "outputDirectory": "public",
     "framework": "vite",
     "regions": [
-      "hnd1"
+        "hnd1"
     ],
     "functions": {
       "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/functions/api/index.php"
-      }
+        {
+            "src": "/(css|js|brand|ad-images|default|videos)/(.*)",
+            "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/build/assets/(.*)",
+            "dest": "/public/build/assets/$1"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/robots.txt",
+            "dest": "/public/robots.txt"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        },
+        {
+          "src": "/api/(.*)",
+          "dest": "/functions/api/index.php"
+        }
     ],
     "env": {
       "APP_NAME": "Easy Shop",
