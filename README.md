@@ -10,5 +10,4 @@ git add . && git commit -m "commit 10" && git branch -M main && git push -u orig
 
 
 # API ENDPOINT
-
 ## php artisan route:list --path=api > api_routes_list.txt

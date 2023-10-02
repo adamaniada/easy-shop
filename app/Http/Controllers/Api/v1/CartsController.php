@@ -56,7 +56,7 @@ class CartsController extends Controller
         return response()->json(['message' => 'Supprimé avec success']);
     }
 
-    public function destroyAll()
+    public function clearAll()
     {
         Cart::where('carts.user_id', Auth::user()->id)->delete();
 

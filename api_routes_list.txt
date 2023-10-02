@@ -4,17 +4,21 @@
   GET|HEAD        api/auth/me ........................................................ auth.me › Api\AuthController@me
   POST            api/auth/refresh ......................................... auth.refresh › Api\AuthController@refresh
   POST            api/auth/register ...................................... auth.register › Api\AuthController@register
-  PUT             api/auth/user/update-password .... auth.users.updatePassword › Api\v1\UsersController@updatePassword
-  PUT             api/auth/user/update-profile ....... auth.users.updateProfile › Api\v1\UsersController@updateProfile
-  PUT             api/auth/user/{id}/active-account .. auth.users.activeAccount › Api\v1\UsersController@activeAccount
-  PUT             api/auth/user/{id}/delete-account .. auth.users.deleteAccount › Api\v1\UsersController@deleteAccount
-  PUT             api/auth/user/{id}/disable-account auth.users.disableAccount › Api\v1\UsersController@disableAccount
-  POST            api/auth/verify ............................................ auth.verify › Api\AuthController@verify
+  GET|HEAD        api/auth/user/reset-password ......... reset-password.index › Api\Auth\ResetPasswordController@index
+  PUT|PATCH       api/auth/user/reset-password/{reset_password} reset-password.update › Api\Auth\ResetPasswordControl…
+  PUT|PATCH       api/auth/user/update-password/{update_password} update-password.update › Api\Auth\UpdatePasswordCon…
+  PUT|PATCH       api/auth/user/update-profile/{update_profile} update-profile.update › Api\Auth\UpdateProfileControl…
+  DELETE          api/v1/cart/clear-all ....................... api.v1.cart.clearAll › Api\v1\CartsController@clearAll
+  GET|HEAD        api/v1/carts ............................................ carts.index › Api\v1\CartsController@index
+  POST            api/v1/carts ............................................ carts.store › Api\v1\CartsController@store
+  DELETE          api/v1/carts/{cart} ................................. carts.destroy › Api\v1\CartsController@destroy
   GET|HEAD        api/v1/products ................................... products.index › Api\v1\ProductsController@index
-  POST            api/v1/products ................................... products.store › Api\v1\ProductsController@store
-  GET|HEAD        api/v1/products/{product} ........................... products.show › Api\v1\ProductsController@show
-  PUT|PATCH       api/v1/products/{product} ....................... products.update › Api\v1\ProductsController@update
-  DELETE          api/v1/products/{product} ..................... products.destroy › Api\v1\ProductsController@destroy
+  GET|HEAD        api/v1/shipping-address ............ shipping-address.index › Api\v1\ShippingAddressController@index
+  POST            api/v1/shipping-address ............ shipping-address.store › Api\v1\ShippingAddressController@store
+  PUT|PATCH       api/v1/shipping-address/{shipping_address} shipping-address.update › Api\v1\ShippingAddressControll…
+  DELETE          api/v1/shipping-address/{shipping_address} shipping-address.destroy › Api\v1\ShippingAddressControl…
+  GET|HEAD        api/v1/transaction .......................... transaction.index › Api\v1\TransactionController@index
+  POST            api/v1/transaction .......................... transaction.store › Api\v1\TransactionController@store
 
-                                                                                                   Showing [16] routes
+                                                                                                   Showing [20] routes
 

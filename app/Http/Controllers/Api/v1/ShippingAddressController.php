@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 
 class ShippingAddressController extends Controller
 {
-    public function getMyShippingAddress()
+    public function index()
     {
         $shippingAddress = ShippingAddress::find(auth()->id());
         if (!$shippingAddress) {
@@ -49,5 +49,12 @@ class ShippingAddressController extends Controller
     public function update(Request $request, $id)
     {
         // Les mises à jour pourraient ne pas être nécessaires, car les adresses de livraison sont généralement créées et supprimées, pas mises à jour.
+    }
+
+    public function destroy(string $id)
+    {
+        ShippingAddress::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'Supprimé avec success']);
     }
 }
